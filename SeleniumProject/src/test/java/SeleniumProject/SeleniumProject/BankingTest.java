@@ -18,7 +18,7 @@ public class BankingTest extends TestCase{
 	
 	//download chrom driver from https://googlechromelabs.github.io/chrome-for-testing/
 	public String baseUrl = "http://localhost:8080/hello";  
-	String driverPath = "C:\\Users\\krish\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe";  
+	String driverPath = "E:\\chromedriver-win64\\chromedriver-win\64\\chromedriver.exe";  
 	
 	public WebDriver driver;
 	
@@ -50,7 +50,7 @@ public class BankingTest extends TestCase{
         //WebElement searchInput = driver.findElement(By.name("q"));
 		WebElement e = driver.findElement(By.xpath("//*[text()='Welcome to Tousif Banking website']"));
 		System.out.println("Element with text(): [" + e.getText() +"]");
-		Assert.assertEquals("Welcome to Tousif Banking website", e.getText());
+		Assert.assertEquals("InsureME project", e.getText());
 		
 		driver.quit();
         
